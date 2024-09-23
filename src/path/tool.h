@@ -1,5 +1,6 @@
 #pragma once
 #include <cmath>
+
 #include "data_structure.h"
 
 namespace PathPlanning {
@@ -12,4 +13,4 @@ PathPoint local_to_global(const PathPoint& ref, const PathPoint& target);
 
 PathPoint global_to_local(const PathPoint& ref, const PathPoint& target);
 
-}
+}  // namespace PathPlanning

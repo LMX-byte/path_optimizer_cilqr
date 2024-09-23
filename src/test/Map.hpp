@@ -5,24 +5,25 @@
 #ifndef PATH_OPTIMIZER_INCLUDE_TOOLS_MAP_HPP_
 #define PATH_OPTIMIZER_INCLUDE_TOOLS_MAP_HPP_
 
-#include <iostream>
 #include <cassert>
-#include <stdexcept>
-#include "Eigen/Core"
 #include <grid_map_core/grid_map_core.hpp>
+#include <iostream>
+#include <stdexcept>
+
+#include "Eigen/Core"
 
 namespace Test {
 
 class Map {
  public:
-    Map() = delete;
-    explicit Map(const grid_map::GridMap &grid_map);
-    double getObstacleDistance(const Eigen::Vector2d &pos) const;
-    bool isInside(const Eigen::Vector2d &pos) const;
+  Map() = delete;
+  explicit Map(const grid_map::GridMap &grid_map);
+  double getObstacleDistance(const Eigen::Vector2d &pos) const;
+  bool isInside(const Eigen::Vector2d &pos) const;
 
  private:
-    const grid_map::GridMap &maps;
+  const grid_map::GridMap &maps;
 };
-}
+}  // namespace Test
 
-#endif //PATH_OPTIMIZER_INCLUDE_TOOLS_MAP_HPP_
+#endif  // PATH_OPTIMIZER_INCLUDE_TOOLS_MAP_HPP_

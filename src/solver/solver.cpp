@@ -1,7 +1,3 @@
 #include "solver.h"
 
-namespace Solver {
-
-
-
-}
+namespace Solver {}
